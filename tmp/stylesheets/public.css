@@ -898,8 +898,14 @@ ul.nav-pills {
     #mobile-main-nav ul li .btn {
       margin: 0 10px;
       color: white; }
-      #mobile-main-nav ul li .btn.btn-success:hover {
-        background: #85C342; }
+      #mobile-main-nav ul li .btn.btn-success {
+        color: white; }
+        #mobile-main-nav ul li .btn.btn-success:hover {
+          background: #85C342; }
+      #mobile-main-nav ul li .btn.btn-info {
+        color: #545a5f;
+        display: block;
+        border: 1px solid #dddddd !important; }
   #mobile-main-nav ul.mobile-subnav li a {
     color: #1384b2;
     font-family: "museo_sans_900regular", Helvetica, Arial, sans-serif; }
@@ -1266,30 +1272,22 @@ a {
   .main-nav-top a {
     padding-left: 4px;
     padding-right: 4px; }
-  .main-nav-top .checkout-btn-wrapper {
+  .main-nav-top .checkout-btn-wrapper .btn, .main-nav-top .currency-btn-wrapper .btn {
     position: relative;
-    top: 0px; }
-    .main-nav-top .checkout-btn-wrapper .btn {
-      position: relative;
-      bottom: -3px;
-      padding-bottom: 6px;
-      border-bottom-right-radius: 0;
-      border-bottom-left-radius: 0;
-      font-size: .8em; }
-  .main-nav-top .currency-btn-wrapper {
-    position: relative;
-    top: 0px; }
-    .main-nav-top .currency-btn-wrapper .btn {
-      position: relative;
-      bottom: -3px;
-      padding-bottom: 6px;
-      border-bottom-right-radius: 0;
-      border-bottom-left-radius: 0;
-      font-size: .8em;
-      font-weight: 500 !important;
-      margin-right: 4px; }
-    .main-nav-top .currency-btn-wrapper .dropdown-menu .radio {
-      margin: 5px 0; }
+    bottom: -3px;
+    padding-bottom: 6px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    font-size: .8em; }
+    @media (max-width: 992px) {
+      .main-nav-top .checkout-btn-wrapper .btn, .main-nav-top .currency-btn-wrapper .btn {
+        top: 4px;
+        font-size: 0.6em !important; } }
+  .main-nav-top .currency-btn-wrapper .btn {
+    font-weight: 500 !important;
+    margin-right: 4px; }
+  .main-nav-top .currency-btn-wrapper .dropdown-menu .radio {
+    margin: 5px 0; }
 
 #hidden-menu {
   position: fixed;
