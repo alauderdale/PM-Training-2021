@@ -60,8 +60,94 @@
               %a{:href=>"/public/corporate-training/private-portal"}
                 Private training portal   
         %li
-          %a.btn.btn-success.navbar-btn{:href=>"/public/checkout"}
+          %a.btn.btn-info.navbar-btn{"data-toggle" => "dropdown", :type => "button"}
+            USD
+            %i.fa.fa-caret-down
+          %ul.dropdown-menu{:role => "menu"}
+            %li
+              %a{:href => "#"} 
+                .radio
+                  %label
+                    %input#optionsRadios1{ :name => "optionsRadios", :type => "radio", :value => "option1"}/
+                    %span.bold-font-name
+                      AUS $ 
+                    &ensp;Australlian Dollar
+            %li
+              %a{:href => "#"} 
+                .radio
+                  %label
+                    %input#optionsRadios2{:name => "optionsRadios", :type => "radio", :value => "option2"}/
+                    %span.bold-font-name
+                      CAD $ 
+                    &ensp;Canadian Dollar
+            %li
+              %a{:href => "#"} 
+                .radio
+                  %label
+                    %input#optionsRadios3{:name => "optionsRadios", :type => "radio", :value => "option3"}/
+                    %span.bold-font-name
+                      EUR € 
+                    &ensp;European Euro
+            %li
+              %a{:href => "#"} 
+                .radio
+                  %label
+                    %input#optionsRadios4{:name => "optionsRadios", :type => "radio", :value => "option4"}/
+                    %span.bold-font-name
+                      GBP £ 
+                    &ensp;United Kingdom Pound Sterling
+            %li
+              %a{:href => "#"} 
+                .radio
+                  %label
+                    %input#optionsRadios5{:checked => "checked", :name => "optionsRadios", :type => "radio", :value => "option5"}/
+                    %span.bold-font-name
+                      USD $ 
+                    &ensp;United States Dollar
+        %li.quarter-margin-top
+          %a.btn.btn-success.navbar-btn
             Checkout
+          %ul.dropdown-menu{:role => "menu"}
+            %li
+              %a{:href => "#"} 
+                .radio
+                  %label
+                    %input#optionsRadios1{ :name => "optionsRadios", :type => "radio", :value => "option1"}/
+                    %span.bold-font-name
+                      AUS $ 
+                    &ensp;Australlian Dollar
+            %li
+              %a{:href => "#"} 
+                .radio
+                  %label
+                    %input#optionsRadios2{:name => "optionsRadios", :type => "radio", :value => "option2"}/
+                    %span.bold-font-name
+                      CAD $ 
+                    &ensp;Canadian Dollar
+            %li
+              %a{:href => "#"} 
+                .radio
+                  %label
+                    %input#optionsRadios3{:name => "optionsRadios", :type => "radio", :value => "option3"}/
+                    %span.bold-font-name
+                      EUR € 
+                    &ensp;European Euro
+            %li
+              %a{:href => "#"} 
+                .radio
+                  %label
+                    %input#optionsRadios4{:name => "optionsRadios", :type => "radio", :value => "option4"}/
+                    %span.bold-font-name
+                      GBP £ 
+                    &ensp;United Kingdom Pound Sterling
+            %li
+              %a{:href => "#"} 
+                .radio
+                  %label
+                    %input#optionsRadios5{:checked => "checked", :name => "optionsRadios", :type => "radio", :value => "option5"}/
+                    %span.bold-font-name
+                      USD $ 
+                    &ensp;United States Dollar
         %hr.no-margin-bottom
       %ul.nav.navbar-nav.mobile-subnav
         %li

@@ -53,9 +53,16 @@ ul.nav-pills{
 				margin:0 10px;
 				color:white;
 				&.btn-success{
+					color:white;
 					&:hover{
 						background:$green-color;
 					}
+				}
+				&.btn-info{
+					//currency button
+					color:$text-color;
+					display: block;
+					border:1px solid $gray-color!important;
 				}
 			}
 		}

@@ -149,9 +149,9 @@
 		padding-left:4px;
 		padding-right:4px;
 	}
-	.checkout-btn-wrapper{
-		position:relative;
-		top:0px;
+
+	.checkout-btn-wrapper, .currency-btn-wrapper{
+
 		.btn{
 			position:relative;
 			bottom:-3px;
@@ -159,18 +159,21 @@
 			border-bottom-right-radius:0;
 			border-bottom-left-radius:0;
 			font-size:.8em;
+			@include breakpoint(md) {
+				top:4px;
+				font-size:.6em!important;	
+			}
 		}
+
+	}
+
+	.checkout-btn-wrapper{
+
+
 	}
 	.currency-btn-wrapper{
-		position:relative;
-		top:0px;
+
 		.btn{
-			position:relative;
-			bottom:-3px;
-			padding-bottom:6px;
-			border-bottom-right-radius:0;
-			border-bottom-left-radius:0;
-			font-size:.8em;
 			font-weight: 500!important;
 			margin-right:4px;
 		}
