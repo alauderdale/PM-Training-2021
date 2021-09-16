@@ -1300,13 +1300,13 @@ a {
   border-bottom: 1px solid #dddddd; }
   #hidden-menu .sale {
     display: none; }
-  #hidden-menu .checkout-btn-wrapper {
+  #hidden-menu .checkout-btn-wrapper .btn, #hidden-menu .currency-btn-wrapper .btn {
+    padding: 3px 10px !important;
     position: relative;
-    top: -6px; }
-    #hidden-menu .checkout-btn-wrapper .btn {
-      padding: 3px 10px !important;
-      position: relative;
-      top: 3px; }
+    top: -3px;
+    font-size: 1.6rem !important; }
+  #hidden-menu .currency-btn-wrapper .btn {
+    margin-right: 3px; }
   #hidden-menu ul.dropdown-menu {
     top: 28px !important; }
   #hidden-menu ul.main-links li.active {

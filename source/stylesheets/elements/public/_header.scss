@@ -199,14 +199,17 @@
 	.sale{
 		display:none;
 	}
-	.checkout-btn-wrapper{
-		position:relative;
-		top:-6px;
+	.checkout-btn-wrapper, .currency-btn-wrapper{
 		.btn{
 			padding:3px 10px!important;
 			position:relative;
-			top:3px;
-
+			top:-3px;
+			font-size: 1.6rem!important;
+		}
+	}
+	.currency-btn-wrapper{
+		.btn{
+			margin-right:3px;
 		}
 	}
 	ul.dropdown-menu{
